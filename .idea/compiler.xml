@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="car-mapper" />
+        <module name="car-pojo" />
+        <module name="car-service" />
+        <module name="car-util" />
+        <module name="car-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="car-mapper" target="1.8" />
+      <module name="car-pojo" target="1.8" />
+      <module name="car-sale-parent" target="1.8" />
+      <module name="car-service" target="1.8" />
+      <module name="car-util" target="1.8" />
+      <module name="car-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/car-mapper/car-mapper.iml" filepath="$PROJECT_DIR$/car-mapper/car-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-pojo/car-pojo.iml" filepath="$PROJECT_DIR$/car-pojo/car-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-sale-parent.iml" filepath="$PROJECT_DIR$/car-sale-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-service/car-service.iml" filepath="$PROJECT_DIR$/car-service/car-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-util/car-util.iml" filepath="$PROJECT_DIR$/car-util/car-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-web/car-web.iml" filepath="$PROJECT_DIR$/car-web/car-web.iml" />
+    </modules>
+  </component>
+</project>
