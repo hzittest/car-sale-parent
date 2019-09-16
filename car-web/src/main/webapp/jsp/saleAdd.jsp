@@ -31,8 +31,10 @@
             <div class="x_content">
                 <br/>
                 <form id="addCustomer" data-parsley-validate class="form-horizontal form-label-left"
-                      action="${pageContext.request.contextPath}/sale/insertSale.action" method="post">
+                      action="${pageContext.request.contextPath}/sale/insertSale" method="post">
+                    <%--默认未付款--%>
                     <input type="hidden" name="saleType" value="1"/>
+                        <%----%>
                     <input type="hidden" name="adminEmpId" value="${emp.empId}"/>
                     <input id="saleCompany" type="hidden" name="companyId" value="${emp.companyId}"/>
 

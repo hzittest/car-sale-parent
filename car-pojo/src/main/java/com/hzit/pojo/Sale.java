@@ -10,6 +10,36 @@ public class Sale {
     private Integer saleNum;//销售数量
     private Double saleCurPrice;//销售价格
     private Integer carId;//汽车编号
+
+
+    private Customer customer; //消费者
+    private Car car; //购买的汽车
+    private Employee employee; //销售员
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
     public Sale() {
         super();
     }

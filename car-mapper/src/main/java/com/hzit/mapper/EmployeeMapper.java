@@ -87,4 +87,11 @@ public interface EmployeeMapper{
 	 * @return
 	 */
     int updateNonEmptyEmployee(@Param("enti") Employee value, @Param("assist") Assist assist);
+
+	/**
+	 * 查询对应公司 所有的员工
+	 * @param companyId
+	 * @return
+	 */
+	List<Employee> selectEmployeeByCompanyId(Integer companyId);
 }

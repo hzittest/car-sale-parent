@@ -170,9 +170,17 @@
                                         <td>¥${sale.saleCurPrice}</td>
                                         <td>${sale.saleNum}</td>
                                         <td>${sale.employee.empName}</td>
-                                        <td>${sale.getSaleTypeFormat()}</td>
                                         <td>
-                                            <c:if test="${sale.getSaleTypeFormat()=='未付款'}">
+                                            <c:if test="${sale.saleType=='1'}">
+                                                    <button type="button" class="btn btn-info btn-xs">未付款</button>
+                                            </c:if>
+
+                                            <c:if test="${sale.saleType!='1'}">
+                                                <button type="button" class="btn btn-info btn-xs">已付款</button>
+                                            </c:if>
+                                        </td>
+                                        <td>
+                                            <c:if test="${sale.saleType=='1'}">
                                                 <a href="${pageContext.request.contextPath}/sale/updateSaleById.action?empId=${emp.empId}&saleId=${sale.saleId}">
                                                     <button type="button" class="btn btn-info btn-xs">付款</button>
                                                 </a>

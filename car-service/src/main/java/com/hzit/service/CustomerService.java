@@ -13,6 +13,6 @@ public interface CustomerService {
      * 客户管理
      * @return
      */
-    public List<Customer> findCustomerList();
+    public List<Customer> findCustomerList(int companyId);
 
 }

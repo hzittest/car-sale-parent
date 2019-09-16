@@ -55,6 +55,10 @@
         ,employee.empPassword as empPassword
     </sql>
 
+    <select id="selectEmployeeByCompanyId" resultMap="result_Employee_Map">
+        SELECT * FROM employee WHERE companyId = #{companyId}
+    </select>
+
     <!--获得类名为:Employee对应的数据库表的数据总行数 -->
     <select id="getEmployeeRowCount" parameterType="com.common.Assist" resultType="java.lang.Long">
         select count(empId) from employee

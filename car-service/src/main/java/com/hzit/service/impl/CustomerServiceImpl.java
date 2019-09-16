@@ -1,5 +1,6 @@
 package com.hzit.service.impl;
 
+import com.common.Assist;
 import com.hzit.mapper.CustomerMapper;
 import com.hzit.pojo.Customer;
 import com.hzit.service.CustomerService;
@@ -15,8 +16,15 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerMapper customerMapper;
 
     @Override
-    public List<Customer> findCustomerList() {
-        List<Customer> list = customerMapper.selectCustomer(null);
+    public List<Customer> findCustomerList(int companyId) {
+
+        Assist assist = new Assist();
+
+        Assist.WhereRequire we = Assist.andEq("companyId",companyId);
+        assist.setRequires(we);
+
+
+        List<Customer> list = customerMapper.selectCustomer(assist);
         return list;
     }
 }

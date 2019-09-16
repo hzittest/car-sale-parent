@@ -101,10 +101,10 @@ $(function () {
 
     /*根据公司编号查询销售员工*/
     $.getJSON(
-        projectName + '/sale/getAllEmpByCompanyId.action',
-        {companyId: companyId},
-        function (json) {
-            var employeeList = json.employeeList;
+        projectName + '/emp/list',
+        //{companyId: companyId},
+        function (employeeList) {
+            //var employeeList = json.employeeList;
             console.log(employeeList);
             //将所有销售人员展现在下拉框中
             for (var i = 0; i < employeeList.length; i++ ) {

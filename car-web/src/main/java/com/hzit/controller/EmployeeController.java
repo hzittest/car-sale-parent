@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @RequestMapping("/emp")
@@ -77,6 +78,22 @@ public class EmployeeController {
             return "EmpMain";
         }
         return "EmpMain";
+    }
+
+
+
+    @RequestMapping("/list")
+    @ResponseBody
+    public List<Employee> findEmployee(HttpSession httpSession){
+        //获取登录公司的id
+        Object emp = httpSession.getAttribute("emp");
+        if(emp==null)
+        {
+            return null;
+        }
+        Employee employee = (Employee) emp;
+       List<Employee> list =  employeeService.findEmployeeByCompanyId(employee.getCompanyId());
+        return list;
     }
 
 }

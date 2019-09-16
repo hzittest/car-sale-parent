@@ -2,6 +2,7 @@ package com.hzit.mapper;
 
 import com.common.Assist;
 import com.hzit.pojo.Sale;
+import com.sun.corba.se.spi.presentation.rmi.IDLNameTranslator;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -87,4 +88,13 @@ public interface SaleMapper{
 	 * @return
 	 */
     int updateNonEmptySale(@Param("enti") Sale value, @Param("assist") Assist assist);
+
+
+	/**
+	 * 查询指定公司的 销售记录
+	 * @param companyId
+	 * @return
+	 */
+	List<Sale> findSaleListByCompanyId(Integer companyId);
+
 }

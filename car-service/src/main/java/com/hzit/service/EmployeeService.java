@@ -2,6 +2,8 @@ package com.hzit.service;
 
 import com.hzit.pojo.Employee;
 
+import java.util.List;
+
 public interface EmployeeService {
 
     /**
@@ -30,5 +32,5 @@ public interface EmployeeService {
     public Employee findEmployeeByEmpname(String empName);
 
 
-
+    List<Employee> findEmployeeByCompanyId(Integer companyId);
 }

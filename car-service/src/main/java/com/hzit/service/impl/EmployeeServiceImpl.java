@@ -2,6 +2,7 @@ package com.hzit.service.impl;
 
 import com.common.Assist;
 import com.hzit.mapper.EmployeeMapper;
+import com.hzit.pojo.Company;
 import com.hzit.pojo.Employee;
 import com.hzit.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,5 +67,13 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee1 = employeeMapper.selectEmployeeByObj(employee);
 
         return employee1;
+    }
+
+    @Override
+    public List<Employee> findEmployeeByCompanyId(Integer companyId) {
+
+      List<Employee> list  =   employeeMapper.selectEmployeeByCompanyId(companyId);
+
+        return list;
     }
 }
