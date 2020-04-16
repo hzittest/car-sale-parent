@@ -7,6 +7,12 @@
     <groupId>com.hzit</groupId>
     <artifactId>car-sale-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
+    <!--
+        Hello BJ1905.....
+    -->
+
     <modules>
         <module>car-pojo</module>
         <module>car-mapper</module>
@@ -28,7 +34,7 @@
         <!-- log4j日志文件管理包版本 -->
         <slf4j.version>1.7.12</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
-        
+
     </properties>
 
     <!--jar:普通java项目-->
@@ -54,7 +60,6 @@
             <artifactId>spring-jdbc</artifactId>
             <version>4.3.3.RELEASE</version>
         </dependency>
-
 
 
         <dependency>
@@ -104,18 +109,18 @@
     <dependencyManagement>
 
         <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
-        </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.46</version>
+            </dependency>
 
-        <!-- HikariCP -->
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>3.3.1</version>
-        </dependency>
+            <!-- HikariCP -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>3.3.1</version>
+            </dependency>
 
             <!--mybaits相关的依赖包-->
             <dependency>
@@ -132,9 +137,6 @@
         </dependencies>
 
     </dependencyManagement>
-
-
-
 
 
 </project>
